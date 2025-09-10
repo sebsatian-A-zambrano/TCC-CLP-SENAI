@@ -250,11 +250,11 @@
 
   <script>
     // Copiar o conteúdo "bruto" do código (sem os spans HTML) — recria o código original com entidades convertidas.
-    const rawText = `<code>(* Projeto: Sistema de Autoalinhamento Pneumático *)</code>
-<code>(* Sensores: Omron E3Z-D61                       *)</code>
-<code>(* PLC: OpenPLC                                  *)</code>
+    const rawText = `(* Projeto: Sistema de Autoalinhamento Pneumático *)
+(* Sensores: Omron E3Z-D61                       *)
+(* PLC: OpenPLC                                  *)
 
-<code>VAR<code>
+VAR
     (* Entradas - Sensores *)
     SD       : BOOL := %I0.0;   (* Sensor Direito *)
     SI       : BOOL := %I0.1;   (* Sensor Esquerdo *)
@@ -266,7 +266,7 @@
     (* Temporizadores TON *)
     Timer_D  : TON;             (* Temporizador lado Direito *)
     Timer_I  : TON;             (* Temporizador lado Esquerdo *)
-<code>END_VAR</code>
+END_VAR
 
 
 (* ---------------- Lógica lado Direito ---------------- *)
